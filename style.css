@@ -118,25 +118,3 @@ iframe{
     margin-top: 10px;
     border-top: 1px solid grey;
 }
-
-
-/*Responsive @mediaquery*/
-
-/* Small devices (landscape phones, 320px a 767px) */
-@media (min-width: 320px) and (max-width: 767px) {
-}
-
-/* Medium devices (tablets, 768px a 991px) */
-@media (min-width: 768px) and (max-width: 991px) { 
-
-}
-
-/* Large devices (desktops, 992px and 1199) */
-@media (min-width: 992px) and (max-width: 1199px) { 
-
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px)  { 
-
-}
