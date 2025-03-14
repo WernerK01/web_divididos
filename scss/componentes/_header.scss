@@ -1,0 +1,29 @@
+@use '../other/mixin.scss' as mixin;
+@use '../other/animation' as animation;
+@use "../base/colors" as color;
+
+.header {
+    .navbar {
+        background-color: color.$base;
+        padding: 2px;
+
+        .navbar-icon {
+            @include mixin.images(120px)
+        }
+    
+        .nav-link { 
+            color: color.$white;
+        
+            &:hover {
+                color: color.$red;
+            }
+        }
+        .animation {
+            position: relative;
+            right: 30px;
+            animation: munieco 3s infinite;
+            -moz-animation: munieco 3s infinite;
+            -webkit-animation: munieco 3s infinite;
+        }
+    }
+}

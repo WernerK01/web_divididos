@@ -1,0 +1,24 @@
+@use "../base/colors" as color;
+
+.footer {
+    background-color: color.$base;
+    padding-top: 10px;
+
+    .icon {
+        display: inline-block;
+        position: relative;
+        background-repeat: no-repeat;
+    
+        margin-right: 10px;
+        color: color.$white;
+
+        &:hover {
+            color: color.$red;
+        }
+    }
+    
+    .copyright-text {
+        font-size: 10px;
+        color: grey
+    }
+}

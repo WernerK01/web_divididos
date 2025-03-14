@@ -1,0 +1,60 @@
+@use '../other/mixin.scss' as mixin;
+@use "../base/colors" as color;
+
+.main {
+
+    background-image: url("../../imagenes/FondoMuniecos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    .h2 {
+        @extend .h1;
+    }
+
+    .imagenes {
+        @include mixin.images(300px)
+    }
+    
+    .textos {
+        width: 100%;
+    }
+
+    .section {
+        background-color: color.$bg-section-color;
+    }
+
+    .card {
+        background-color: color.$base;
+        .card-text {
+            font-size: smaller;
+        }
+
+        .btn {
+            font-size: small;
+            font-weight: bold;
+
+            &:hover {
+                background-color: color.$base;
+                border-color: color.$darkred;
+            }
+        }
+    }
+
+    .conciertos {
+        font-size: medium;
+        .row {
+            &>* {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+        }
+    }
+}
